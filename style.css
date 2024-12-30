@@ -1,69 +1,71 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background-color: #28a745;
-    color: white;
+    background-color: #333;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
 nav {
-    background-color: #343a40;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #444;
+    overflow: hidden;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #ddd;
+    color: black;
 }
 
-main {
+.container {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-article {
-    background-color: white;
+.profile {
+    text-align: center;
     margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-article h2 {
-    margin-top: 0;
-    color: #28a745;
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
-article p {
-    line-height: 1.6;
+.about {
+    margin-bottom: 20px;
+}
+
+.projects {
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-bottom: 20px;
 }
 
 footer {
-    background-color: #343a40;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-footer p {
-    margin: 0;
 }
