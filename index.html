@@ -3,47 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Pribadi Saya</title>
+    <title>Kevin Anggara</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #28a745;
-            color: white;
+            background-color: #333;
+            color: #fff;
             padding: 10px 0;
             text-align: center;
         }
         nav {
-            background-color: #343a40;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+            background-color: #444;
+            overflow: hidden;
         }
         nav a {
-            color: white;
-            margin: 0 15px;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
         }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
         }
-        article {
-            background-color: white;
-            margin-bottom: 20px;
+        .container {
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .about {
+            margin-bottom: 20px;
+        }
+        .contact {
+            margin-bottom: 20px;
         }
         footer {
-            background-color: #343a40;
-            color: white;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 10px 0;
             position: fixed;
@@ -54,32 +65,40 @@
 </head>
 <body>
     <header>
-        <h1>Blog Pribadi Saya</h1>
+        <h1>Kevin Anggara</h1>
     </header>
     <nav>
-        <a href="#">Beranda</a>
-        <a href="#">Tentang Saya</a>
-        <a href="#">Kontak</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
     </nav>
-    <main>
-        <article>
-            <h2>Judul Postingan Pertama</h2>
-            <p><strong>Tanggal:</strong> 30 Desember 2024</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-        <article>
-            <h2>Judul Postingan Kedua</h2>
-            <p><strong>Tanggal:</strong> 29 Desember 2024</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-        <article>
-            <h2>Judul Postingan Ketiga</h2>
-            <p><strong>Tanggal:</strong> 28 Desember 2024</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </article>
-    </main>
+    <div class="container">
+        <section class="profile">
+            <img src="https://via.placeholder.com/150" alt="Kevin Anggara">
+            <h2>Kevin Anggara</h2>
+            <p>Seorang Pengembang Web</p>
+        </section>
+        <section id="about" class="about">
+            <h2>Tentang Saya</h2>
+            <p>Halo, saya Kevin Anggara. Saya adalah seorang pengembang web yang berdedikasi untuk menciptakan solusi digital yang inovatif dan efisien. Saya memiliki pengalaman dalam berbagai bahasa pemrograman dan framework web.</p>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Proyek</h2>
+            <ul>
+                <li>Proyek Website Toko Online</li>
+                <li>Aplikasi Manajemen Keuangan</li>
+                <li>Sistem Informasi Manajemen Proyek</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Kontak</h2>
+            <p>Email: kevinanggara@example.com</p>
+            <p>Telepon: +62 812 345 6789</p>
+            <p>Alamat: Jl. Contoh No. 123, Kota Makassar, Indonesia</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Nama Anda. Hak Cipta Dilindungi.</p>
+        <p>&copy; 2024 Kevin Anggara. Hak Cipta Dilindungi.</p>
     </footer>
 </body>
 </html>
