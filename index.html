@@ -3,45 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Anggara</title>
+    <title>Masuk - Kevin Anggara</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Kevin Anggara</h1>
-    </header>
-    <nav>
-        <a href="#about">Tentang Saya</a>
-        <a href="#projects">Proyek</a>
-        <a href="#contact">Kontak</a>
-    </nav>
-    <div class="container">
-        <section class="profile">
-            <img src="https://via.placeholder.com/150" alt="Kevin Anggara">
-            <h2>Kevin Anggara</h2>
-            <p>Seorang Pengembang Web</p>
-        </section>
-        <section id="about" class="about">
-            <h2>Tentang Saya</h2>
-            <p>Halo, saya Kevin Anggara. Saya adalah seorang pengembang web yang berdedikasi untuk menciptakan solusi digital yang inovatif dan efisien. Saya memiliki pengalaman dalam berbagai bahasa pemrograman dan framework web.</p>
-        </section>
-        <section id="projects" class="projects">
-            <h2>Proyek</h2>
-            <ul>
-                <li>Proyek Website Toko Online</li>
-                <li>Aplikasi Manajemen Keuangan</li>
-                <li>Sistem Informasi Manajemen Proyek</li>
-            </ul>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Kontak</h2>
-            <p>Email: kevinanggara@example.com</p>
-            <p>Telepon: +62 812 345 6789</p>
-            <p>Alamat: Jl. Contoh No. 123, Kota Makassar, Indonesia</p>
-        </section>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Masuk</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+                <button type="submit">Masuk</button>
+                <p class="register-link">Belum memiliki akun? <a href="register.html">Daftar di sini</a></p>
+            </form>
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Kevin Anggara. Hak Cipta Dilindungi.</p>
-    </footer>
 </body>
 </html>
